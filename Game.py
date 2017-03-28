@@ -24,7 +24,13 @@ Primeiro escolha o seu Inspermon inicial:\n
 ''')
 for ipmon in inspermons:
     mostra_ipmon(ipmon)
-escolha = input ('Qual Inspermon mais te chamou a atenção?')
+escolha = input ('Qual Inspermon mais te chamou a atenção?\n')
+
+for nome in inspermons:
+    a = 0
+    if escolha == nome['nome']:
+        inspescolha = inspermons[a]
+    a += 1
 
 while True:
     
@@ -32,13 +38,19 @@ while True:
     Qual ação deseja realizar?
          dormir ou andar?\n''')
     açao = açao.lower()
+    
     if açao == 'dormir':
         sys.exit(0)
-    elif açao == 'andar':
-        qual = randrange(0,2)
-        batalha()
         
+    elif açao == 'andar':
+        qual = randrange(0,3)
+        mostra_ipmon(inspermons[qual])
+        a = input("Você achou um opoente!!! \nAperte Enter para lutar\n\n")
+        if 1 == batalha(inspescolha['vida'],inspermons[qual]['vida'],inspescolha['poder'],inspermons[qual]['defesa'],inspermons[qual]['poder'],inspescolha['defesa']):
+            continue
+        else:
+            break
     else:
         erro = input('''
 Você selecionou uma ação inexistente!
-''')
+Aperte Enter para voltar ao menu\n\n''')
