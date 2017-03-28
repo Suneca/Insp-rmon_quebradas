@@ -43,7 +43,7 @@ while True:
         sys.exit(0)
         
     elif açao == 'andar':
-        qual = randrange(0,3)
+        qual = randrange(0,9)
         mostra_ipmon(inspermons[qual])
         a = input("Você achou um opoente!!! \nAperte Enter para lutar\n\n")
         if 1 == batalha(inspescolha['vida'],inspermons[qual]['vida'],inspescolha['poder'],inspermons[qual]['defesa'],inspermons[qual]['poder'],inspescolha['defesa']):
