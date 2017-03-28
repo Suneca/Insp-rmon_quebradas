@@ -1,20 +1,48 @@
 [
 	{
-		"nome" : "picaxu",
+		"nome" : "Picaxumbo",
 		"poder" : 20,
 		"vida" : 200,
 		"defesa" : 12
 	},
 	{
-		"nome" : "xamando",
+		"nome" : "Xameliante",
 		"poder" : 25,
 		"vida" : 100,
 		"defesa" : 10
 	},
 	{
-		"nome" : "pidijet",
+		"nome" : "Pidijetta",
 		"poder" : 15,
 		"vida" : 300,
 		"defesa" : 10
-	}
+	},
+   {
+		"nome" : "Bulbassalto",
+		"poder" : 13,
+		"vida" : 250,
+		"defesa" : 9
+	},
+   {
+		"nome" : "MewTiro",
+		"poder" : 15,
+		"vida" : 300,
+		"defesa" : 10
+	},
+{
+		"nome" : "Zubatcartera",
+		"poder" : 15,
+		"vida" : 300,
+		"defesa" : 10
+	},{
+		"nome" : "Squadrilla",
+		"poder" : 15,
+		"vida" : 300,
+		"defesa" : 10
+	},{
+		"nome" : "Kadavrer",
+		"poder" : 15,
+		"vida" : 300,
+		"defesa" : 10
+	},
 ]
