@@ -26,8 +26,8 @@ for ipmon in inspermons:
     mostra_ipmon(ipmon)
 escolha = input ('Qual Inspermon mais te chamou a atenção?\n')
 
+a = 0
 for nome in inspermons:
-    a = 0
     if escolha == nome['nome']:
         inspescolha = inspermons[a]
     a += 1
@@ -54,3 +54,4 @@ while True:
         erro = input('''
 Você selecionou uma ação inexistente!
 Aperte Enter para voltar ao menu\n\n''')
+        

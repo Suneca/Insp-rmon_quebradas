@@ -29,20 +29,22 @@
 		"vida" : 300,
 		"defesa" : 10
 	},
-{
+   {
 		"nome" : "Zubatcartera",
 		"poder" : 15,
 		"vida" : 300,
 		"defesa" : 10
-	},{
+	},
+   {
 		"nome" : "Squadrilla",
 		"poder" : 15,
 		"vida" : 300,
 		"defesa" : 10
-	},{
+	},
+   {
 		"nome" : "Kadavrer",
 		"poder" : 15,
 		"vida" : 300,
 		"defesa" : 10
-	},
+	}
 ]
