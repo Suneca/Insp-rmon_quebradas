@@ -26,16 +26,20 @@ Primeiro escolha o seu Inspermon inicial:\n
 ''')
 for ipmon in inspermons:
     mostra_ipmon(ipmon)
-escolha = input ('Qual Inspermon mais te chamou a atenção?\n')
-
-a = 0
-for nome in inspermons:
-    if escolha == nome['nome']:
-        inspescolha = inspermons[a]
-    a += 1
-
 while True:
-    
+    inspescolha = 0
+    escolha = input ('Qual Inspermon mais te chamou a atenção?\n')
+    a = 0
+    for nome in inspermons:
+        if escolha == nome['nome']:
+            inspescolha = inspermons[a]
+        a += 1
+    if inspescolha != 0:
+        break
+    else:
+        print("ERROOUUUU!!! \nDigitou errado meu parça, tente novamente")
+# Escolhendo ação do personagem:
+while True:
     açao = input('''
     Qual ação deseja realizar?
          dormir, andar ou insperdex?\n''')
