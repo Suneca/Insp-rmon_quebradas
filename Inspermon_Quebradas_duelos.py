@@ -5,7 +5,7 @@ def batalha(Vida_Jogador,Vida_Oponente, Poder_Jogador, Defesa_Openente, Poder_Op
     while Vida_Jogador > 0 and Vida_Oponente > 0:
         while True:
             i2 = input("Você deseja fugir? ")
-             if i2 == "Sim":
+            if i2 == "Sim":
                 print("Vazilhão\n\n  ")
                 break
             elif i2 == "Não":
