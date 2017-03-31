@@ -2,23 +2,23 @@
 """
 Created on Mon Mar 27 18:18:18 2017
 
-@author: jhona
+@author: jhonata feat. dualstream799
 """
 import sys
 from random import randrange
 from Inspermon_Quebradas_duelos import batalha
 import json
 
-
+# Definindo função para mostrar Inspermons:
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
     print("poder = {0}".format(ipmon["poder"]))
     print("vida = {0}".format(ipmon["vida"]))
     print("defesa = {0}\n".format(ipmon["defesa"]))
-
+# Fazendo upload do Insperdex:
 with open('inspermons.json') as arquivo:
     inspermons = json.load(arquivo)
-
+# Escolhendo Inspermon inicial:
 print('''Olá Jogador!!!
 Primeiro escolha o seu Inspermon inicial:\n
 ''')
@@ -54,4 +54,4 @@ while True:
         erro = input('''
 Você selecionou uma ação inexistente!
 Aperte Enter para voltar ao menu\n\n''')
-        
+
