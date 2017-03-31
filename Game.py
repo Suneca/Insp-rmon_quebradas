@@ -8,7 +8,8 @@ import sys
 from random import randrange
 from Inspermon_Quebradas_duelos import batalha
 import json
-
+from insperdex import adiciona_insperdex
+from insperdex import mostra_insperdex
 
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
@@ -36,7 +37,7 @@ while True:
     
     açao = input('''
     Qual ação deseja realizar?
-         dormir ou andar?\n''')
+         dormir, andar ou insperdex?\n''')
     açao = açao.lower()
     
     if açao == 'dormir':
@@ -47,9 +48,14 @@ while True:
         mostra_ipmon(inspermons[qual])
         a = input("Você achou um opoente!!! \nAperte Enter para lutar\n\n")
         if 1 == batalha(inspescolha['vida'],inspermons[qual]['vida'],inspescolha['poder'],inspermons[qual]['defesa'],inspermons[qual]['poder'],inspescolha['defesa']):
+            adiciona_insperdex(inspermons[qual])
             continue
         else:
             break
+    elif açao == 'insperdex':
+        print (' \n')
+        mostra_insperdex()
+        
     else:
         erro = input('''
 Você selecionou uma ação inexistente!
