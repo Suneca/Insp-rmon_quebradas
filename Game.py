@@ -10,8 +10,7 @@ from Inspermon_Quebradas_duelos import batalha
 import json
 from insperdex import adiciona_insperdex
 from insperdex import mostra_insperdex
-
-
+# Definindo função: Mostras Inspermon:
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
     print("poder = {0}".format(ipmon["poder"]))
