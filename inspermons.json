@@ -3,54 +3,72 @@
 		"nome" : "Picaxumbo",
 		"poder" : 20,
 		"vida" : 200,
-		"defesa" : 12
+		"defesa" : 12,
+       "XP" : 0,
+       "Level"  : 1
 	},
 	{
 		"nome" : "Xameliante",
-		"poder" : 25,
-		"vida" : 100,
-		"defesa" : 10
+		"poder" : 18,
+		"vida" : 200,
+		"defesa" : 10,
+       "XP" : 0,
+       "Level"  : 1
 	},
 	{
 		"nome" : "Pidijetta",
 		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+		"vida" : 175,
+		"defesa" : 8,
+       "XP" : 0,
+       "Level"  : 1
 	},
    {
 		"nome" : "Bulbassalto",
 		"poder" : 13,
-		"vida" : 250,
-		"defesa" : 9
+		"vida" : 190,
+		"defesa" : 9,
+       "XP" : 0,
+       "Level"  : 1
 	},
    {
 		"nome" : "MewTiro",
-		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+		"poder" : 25,
+		"vida" : 600,
+		"defesa" : 10,
+       "XP" : 0,
+       "Level"  : 1
 	},
    {
 		"nome" : "Zubatcartera",
-		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+		"poder" : 10,
+		"vida" : 150,
+		"defesa" : 7,
+       "XP" : 0,
+       "Level"  : 1
 	},
    {
 		"nome" : "Squadrilla",
-		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+		"poder" : 14,
+		"vida" : 200,
+		"defesa" : 11,
+       "XP" : 0,
+       "Level"  : 1
 	},
    {
 		"nome" : "Kadavrer",
-		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+		"poder" : 18,
+		"vida" : 210,
+		"defesa" : 13,
+       "XP" : 0,
+       "Level"  : 1
 	},
    {
 		"nome" : "MewGrau",
-		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+		"poder" : 28,
+		"vida" : 550,
+		"defesa" : 18,
+       "XP" : 0,
+       "Level"  : 1
 	}
 ]
