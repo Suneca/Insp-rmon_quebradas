@@ -4,6 +4,7 @@ Created on Mon Mar 27 18:18:18 2017
 
 @author: jhonata feat. dualstream799
 """
+# Importando bibliotecas e funções:
 import sys
 from random import randrange
 from Inspermon_Quebradas_duelos import batalha
@@ -39,14 +40,15 @@ while True:
         print("ERROOUUUU!!! \nDigitou errado meu parça, tente novamente")
 # Escolhendo ação do personagem:
 while True:
+    # Seleção de ação:
     açao = input('''
     Qual ação deseja realizar?
          dormir, andar ou insperdex?\n''')
     açao = açao.lower()
-    
+    # Comando 'dormir':
     if açao == 'dormir':
         sys.exit(0)
-        
+    # Comando 'andar':
     elif açao == 'andar':
         qual = randrange(0,9)
         mostra_ipmon(inspermons[qual])
@@ -59,10 +61,11 @@ while True:
             continue
         else:
             break
+    # Comando 'visualizar Insperdex':
     elif açao == 'insperdex':
         print (' \n')
         mostra_insperdex()
-        
+    # Controle de erro do usuário:
     else:
         erro = input('''
 Você selecionou uma ação inexistente!
