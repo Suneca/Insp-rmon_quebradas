@@ -12,17 +12,20 @@ def level_up():
     # Parâmetros para a função:
     Character_Status = {"Level":0, "XP":0}
     xp_win = randrange(25, 35)
-    xp_lose = range(5, 15)
+    xp_lose = randrange(5, 15)
+    xp_limit = 100
     # Loop para somar 'XP' ao Personagem:
     if 1 == luta():
         Character_Status["XP"] += xp_win
     elif 0 == luta():
         Character_Status["XP"] += xp_lose
     # Loop para subir de 'Level' e reiniciar o contador de 'XP':
-    if Character_Status["XP"] >= 100:
+    if Character_Status["XP"] >= xp_limit:
         Character_Status["Level"] +=1
-        Character_Status["XP"] - 100
-        
+        Character_Status["XP"] - xp_limit
+        xp_limit += 25
+
+
 
 
 
