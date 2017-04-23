@@ -7,12 +7,15 @@ Created on Mon Mar 27 18:18:18 2017
 
 # Importando bibliotecas e funções:
 import sys
+import json
+# Impostando funções:
 from random import randrange
 from Inspermon_Quebradas_duelos import batalha
-import json
 from insperdex import adiciona_insperdex
 from insperdex import mostra_insperdex
-# Definindo função: Mostras Inspermon:
+from Inspermon_Quebradas_level_system import level_up_player
+from LevelUpSystem import level_up_mon
+# Definindo função 'Mostrar Inspermon':
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
     print("poder = {0}".format(ipmon["poder"]))
@@ -29,7 +32,7 @@ for ipmon in inspermons:
     mostra_ipmon(ipmon)
 while True:
     inspescolha = 0
-    escolha = input ('Qual Inspermon mais te chamou a atenção?\n')
+    escolha = input('Qual Inspermon mais te chamou a atenção?\n')
     a = 0
     for nome in inspermons:
         if escolha == nome['nome']:
@@ -51,12 +54,12 @@ while True:
         sys.exit(0)
     # Comando 'andar':
     elif açao == 'andar':
-        qual = randrange(0,9)
+        qual = randrange(0, 9)
         mostra_ipmon(inspermons[qual])
         a = input("Você achou um opon,ente!!! \nAperte Enter para lutar\n\n")
-        resultado_batalha = batalha(inspescolha['vida'],inspermons[qual]['vida'],
-                                    inspescolha['poder'],inspermons[qual]['defesa'],
-                                    inspermons[qual]['poder'],inspescolha['defesa'])
+        resultado_batalha = batalha(inspescolha['vida'], inspermons[qual]['vida'],
+                                    inspescolha['poder'], inspermons[qual]['defesa'],
+                                    inspermons[qual]['poder'], inspescolha['defesa'])
         if 1 == resultado_batalha:
             adiciona_insperdex(inspermons[qual])
             continue
@@ -66,11 +69,10 @@ while True:
             break
     # Comando 'visualizar Insperdex':
     elif açao == 'insperdex':
-        print (' \n')
+        print(' \n')
         mostra_insperdex()
     # Controle de erro do usuário:
     else:
         erro = input('''
 Você selecionou uma ação inexistente!
 Aperte Enter para voltar ao menu\n\n''')
-

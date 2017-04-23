@@ -9,12 +9,22 @@ import json
 from Inspermon_Quebradas_duelos import luta
 # Abrindo arquivo .json:
 dex = open("inspermons.json", "r+")
-print(str(dex))
+dex.read("inspermons.")
 # Definindo função 'levelup':
-def levelup(luta):
-    xp = randrange(15, 35)
+def level_up_mon(luta):
+    # Parâmetros para a função:
+    level = inspescolha["Level"]
+    xp = inspescolha["Xp"]
+    xp_win = randrange(15, 25)
+    xp_lose = randrange(0, 10)
+    xp_limit = 100
+    # Loop para somar 'XP' ao Inspermon:
     if 1 == luta():
-        try:
-             += xp
-        except:
-            print("deu ruim")
+        inspescolha["XP"] += xp_win
+    elif 0 == luta():
+        inpescolha["XP"] += xp_lose
+    # Loop para subir de 'Level' e reiniciar o contador de 'XP':
+    if ["XP"] >= xp_limit:
+        Character_Status["Level"] += 1
+        Character_Status["XP"] - xp_limit
+        xp_limit += 25
