@@ -6,6 +6,8 @@ Created on Tue Apr  4 16:29:49 2017
 """
 
 # Importando  bibliotecas:
+import json
+# Importando Funções:
 from Inspermon_Quebradas_duelos import luta
 # Definindo função: Level System:
 def level_up_player(luta):

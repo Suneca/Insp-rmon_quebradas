@@ -7,9 +7,10 @@ Created on Tue Apr 18 16:04:38 2017
 # Importando bibliotecas e funções:
 import json
 from Inspermon_Quebradas_duelos import luta
+from Game import i
 # Abrindo arquivo .json:
 dex = open("inspermons.json", "r+")
-dex.read("inspermons.")
+dex.read()
 # Definindo função 'levelup':
 def level_up_mon(luta):
     # Parâmetros para a função:
@@ -25,6 +26,6 @@ def level_up_mon(luta):
         inpescolha["XP"] += xp_lose
     # Loop para subir de 'Level' e reiniciar o contador de 'XP':
     if ["XP"] >= xp_limit:
-        Character_Status["Level"] += 1
-        Character_Status["XP"] - xp_limit
+        inspescolha["Level"] += 1
+        inspescolha["XP"] - xp_limit
         xp_limit += 25
