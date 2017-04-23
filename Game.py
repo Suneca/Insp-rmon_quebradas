@@ -54,7 +54,9 @@ while True:
         qual = randrange(0,9)
         mostra_ipmon(inspermons[qual])
         a = input("Você achou um opon,ente!!! \nAperte Enter para lutar\n\n")
-        resultado_batalha = batalha(inspescolha['vida'],inspermons[qual]['vida'],inspescolha['poder'],inspermons[qual]['defesa'],inspermons[qual]['poder'],inspescolha['defesa'])
+        resultado_batalha = batalha(inspescolha['vida'],inspermons[qual]['vida'],
+                                    inspescolha['poder'],inspermons[qual]['defesa'],
+                                    inspermons[qual]['poder'],inspescolha['defesa'])
         if 1 == resultado_batalha:
             adiciona_insperdex(inspermons[qual])
             continue

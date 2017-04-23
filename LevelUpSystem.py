@@ -12,8 +12,9 @@ dex = open("inspermons.json", "r+")
 print(str(dex))
 # Definindo função 'levelup':
 def levelup(luta):
-    xp = randrange(15,35)
+    xp = randrange(15, 35)
     if 1 == luta():
-
-
-        uikyrthergefvebrdn = 0
+        try:
+             += xp
+        except:
+            print("deu ruim")
