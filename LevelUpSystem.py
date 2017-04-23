@@ -7,10 +7,9 @@ Created on Tue Apr 18 16:04:38 2017
 # Importando bibliotecas e funções:
 import json
 from Inspermon_Quebradas_duelos import luta
-from Game import i
 # Abrindo arquivo .json:
-dex = open("inspermons.json", "r+")
-dex.read()
+with open('inspermons.json') as arquivo:
+    inspermons = json.load(arquivo)
 # Definindo função 'levelup':
 def level_up_mon(luta):
     # Parâmetros para a função:
